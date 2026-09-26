@@ -1,7 +1,7 @@
 # LensaRak — Python dependencies
 # Install semua sekali gus dengan:  pip install -r requirements.txt
 
-opencv-python      # cv2 — camera capture & image processing (lensarak_vision.py)
+opencv-python-headless      # cv2 — camera capture & image processing (lensarak_vision.py)
 ultralytics        # YOLOv8 — object detection model (lensarak_vision.py, lensarak_train.py)
 easyocr             # OCR — quantity label & Arduino Uno/Motor Shield disambiguation (lensarak_vision.py)
 openpyxl            # baca/tulis fail Excel (.xlsx) — lensarak_clean_data.py
