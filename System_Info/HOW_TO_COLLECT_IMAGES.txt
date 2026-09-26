@@ -1,0 +1,73 @@
+LensaRak — Collecting extra training photos (weak/confused classes)
+=====================================================================
+
+WHY MANUAL: I tried to auto-download images for you (Bing/Google image
+scraping), but the network policy on this Claude account blocks direct
+downloads from image search engines — both from Claude's cloud workspace
+and from the sandboxed workspace on your laptop. So this part has to be
+done by hand, but I've set up everything else (folders + auto blur-filter)
+so it's fast.
+
+HOW TO COLLECT (repeat for each class folder below)
+-----------------------------------------------------
+1. Open Google Images (or Bing Images) and search using the suggested
+   terms below — these are worded to avoid clean "studio/product photo"
+   results and favour real, candid, "someone actually took this picture"
+   shots, since studio shots + Roboflow Universe images are what's been
+   hurting accuracy.
+2. Right-click → "Save image as..." (or drag the thumbnail into the
+   folder) for about 15-25 GOOD, clearly-visible, in-focus photos.
+   Skip: diagrams/schematics, screenshots, images with big
+   logos/watermarks covering the item, and pictures where the item is
+   tiny/far in the background.
+3. Save them into the matching "raw" folder below — file names don't
+   matter, just drop them in.
+
+Folders (already created under Desktop\LensaRak\new_dataset_images\):
+
+  E001_Arduino_Uno\raw\
+    search: "arduino uno board on desk photo", "arduino uno with wires
+    breadboard", "arduino uno closeup real photo"
+
+  E003_Motor_Shield\raw\
+    search: "arduino motor shield board on desk photo", "l293d motor
+    shield stacked on arduino", "arduino motor driver shield closeup"
+
+  E007_HC-SR04_Ultrasonic_Sensor\raw\
+    search: "hc-sr04 ultrasonic sensor module desk photo", "ultrasonic
+    sensor module breadboard wires photo"
+
+  E012_IR_Proximity_Sensor\raw\
+    search: "ir infrared proximity sensor module desk photo", "ir
+    obstacle avoidance sensor module breadboard photo"
+
+  E009_DC_Motor_3V\raw\
+    search: "small dc motor 3v hobby desk photo", "mini dc motor with
+    wires closeup photo"
+
+  C003_Thread\raw\  and  E011_DHT11\raw\  (optional — see note)
+    I found "Thread" (C003) is an actual catalogue item under Craft, and
+    it may be what's been getting misread as the E011 DHT11 sensor
+    earlier. If you've seen that mix-up during testing, collect photos
+    for both:
+      C003 Thread: "spool of thread photo", "sewing thread on desk photo"
+      E011 DHT11: "dht11 temperature humidity sensor module photo"
+    If you haven't seen that confusion in practice, skip these two —
+    delete the folders or just leave them empty, the filter script
+    ignores empty folders.
+
+AFTER YOU'VE COLLECTED PHOTOS
+-----------------------------------------------------
+Open a terminal (Git Bash or PowerShell) in the LensaRak folder and run:
+
+    python filter_blurry_images.py
+
+This automatically sorts each class's raw\ photos into:
+  keep\            <- sharp, ready for labeling
+  rejected_blur\   <- auto-rejected as too blurry
+
+Then do one quick manual pass over each "keep" folder and delete anything
+that's the wrong object, a diagram, or a screenshot — the script only
+catches focus problems, not "wrong picture". After that, these are ready
+to bring into Roboflow (or wherever you're labeling) as extra training
+images for the retrain.

@@ -1,0 +1,61 @@
+category,item_code (Class Name),item_name (Visual description)
+Electronics & Robotics,E001,Arduino Uno
+Electronics & Robotics,E002,Arduino Nano
+Electronics & Robotics,E003,Motor Shield
+Electronics & Robotics,E004,Breadboard
+Electronics & Robotics,E005,Gas Detector MQ6
+Electronics & Robotics,E006,NodeMCU
+Electronics & Robotics,E007,HC-SR04 Ultrasonic Sensor
+Electronics & Robotics,E008,N20 Mini Micro Metal Gear
+Electronics & Robotics,E009,DC Motor 3V
+Electronics & Robotics,E010,N20 Micro Metal Gear Motor
+Electronics & Robotics,E011,DHT11 Temperature and humidity sensor
+Electronics & Robotics,E012,Infrared (IR) Proximity Sensor module
+Electronics & Robotics,E013,Sound Sensor
+Electronics & Robotics,E014,LilyPad coin cell battery holder
+Electronics & Robotics,E015,Micro:bit
+Electronics & Robotics,E016,CR2032 battery holder
+Electronics & Robotics,E017,RC522 RFID Card Reader
+Electronics & Robotics,E018,LED Red
+Electronics & Robotics,E019,LED Blue
+Electronics & Robotics,E020,MAX30102 heart rate and Pulse oximeter Sensor
+Electronics & Robotics,E021,Soil Moisture Level Sensor
+Electronics & Robotics,E022,Rocker Switch 6pin
+Electronics & Robotics,E023,Rocker Switch 2pin (Black)
+Electronics & Robotics,E024,Light Dependent Resistor (LDR)
+Electronics & Robotics,E025,Resistor 220Ω
+Electronics & Robotics,E026,Jumper Wire M-M
+Electronics & Robotics,E027,Jumper Wire M-F
+Electronics & Robotics,E028,HC-SR501 PIR Motion Sensor
+Electronics & Robotics,E029,Maker Line Sensor
+Electronics & Robotics,E030,16×2 LCD Display
+Stationery & Office Supplies,S001,Pen
+Stationery & Office Supplies,S002,Permanent marker
+Stationery & Office Supplies,S003,Ruler
+Stationery & Office Supplies,S004,Paper
+Stationery & Office Supplies,S005,Sticky note
+Stationery & Office Supplies,S006,Stapler
+Stationery & Office Supplies,S007,Binder clip
+Stationery & Office Supplies,S008,Tack-it
+Stationery & Office Supplies,S009,Correction tape
+Stationery & Office Supplies,S010,Paper clip
+Stationery & Office Supplies,S011,Whiteboard marker
+Stationery & Office Supplies,S012,Sellotape
+Stationery & Office Supplies,S013,Clipboard
+Stationery & Office Supplies,S014,Pendrive
+Stationery & Office Supplies,S015,Eraser
+Tools & Equipment,T001,Scissor
+Tools & Equipment,T002,Plier
+Tools & Equipment,T003,Screwdriver
+Tools & Equipment,T004,Glue gun
+Tools & Equipment,T005,Measure Tape
+Tools & Equipment,T006,Cutter
+Tools & Equipment,T007,Cutting Mat
+Tools & Equipment,T008,Solder Pen
+Tools & Equipment,T009,Solder Wire
+Tools & Equipment,T010,Smoke Absorber
+Tools & Equipment,T011,Hammer
+Tools & Equipment,T012,Mallet
+Tools & Equipment,T013,Screw Phillips
+Tools & Equipment,T014,Spanner
+Tools & Equipment,T015,Caliper

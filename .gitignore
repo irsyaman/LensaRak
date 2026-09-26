@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+_pages_backup_unused/
+LensaRak-latest-final-1/
+runs/
+.streamlit/secrets.toml
+*.zip

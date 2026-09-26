@@ -1,0 +1,17 @@
+# LensaRak — Python dependencies
+# Install semua sekali gus dengan:  pip install -r requirements.txt
+
+opencv-python      # cv2 — camera capture & image processing (lensarak_vision.py)
+ultralytics        # YOLOv8 — object detection model (lensarak_vision.py, lensarak_train.py)
+easyocr             # OCR — quantity label & Arduino Uno/Motor Shield disambiguation (lensarak_vision.py)
+openpyxl            # baca/tulis fail Excel (.xlsx) — lensarak_clean_data.py
+roboflow            # download dataset dari Roboflow — hanya perlu untuk lensarak_train.py (retrain model)
+google-genai        # Gemini API assist (pengesahan tambahan bila confidence rendah) — lensarak_vision.py
+streamlit           # web dashboard (chatbox) untuk AI Programme Consultant — lensarak_consultant_web.py
+
+# NOTA:
+# - Python 3.10+ disyorkan.
+# - "roboflow" hanya perlu kalau nak retrain model (lensarak_train.py). Untuk run sistem
+#   harian (lensarak_vision.py / LensaRak.bat), package ni boleh diabaikan kalau nak jimat saiz install.
+# - Kali pertama easyocr run, dia akan download model OCR (beberapa saat, perlukan internet sekali sahaja).
+# - "streamlit" hanya perlu kalau nak guna AI Programme Consultant (option 9/10 dalam LensaRak.bat).
